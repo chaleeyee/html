@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>kholid lagi belajar hiding</title>
+  </head>
+  <body>
+    <h1>belajar tehx formatting</h1>
+    <p>
+      Lorem<b>ipsum</b> dolor sit, amet <b><u>consectetur</u></b>adipisicing elit. Deserunt harum
+      deleniti <del>quisquam</del> cum, rem nostrum autem nihil <i>sit</i> vitae non debitis ipsa
+      <small>porro</small> veniam? Esse quis vero illum veniam amet?
+    </p>
+  </body>
+</html>

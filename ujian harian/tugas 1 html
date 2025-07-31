@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>kholid lagi belajar hiding</title>
+  </head>
+  <body>
+    <h1>petualang di dunia koding</h1>
+    <h2>langkah petuaalang kode</h2>
+    <p>di dunia digital ini .menjadi <b>pengengbang</b>web adalah sebuah perjalanan seru mulanya,kita belajar dari hal-hal sperti membuat <b>pargraf</b>,menulisheading</p>
+    <p>jangan takut <mark>mencoba</mark>,karna setiap kesalahan adalh pelajaran.bahkan saat hode tidak berjalan,kamu tetap belajar<i>terus melangkah!</i></p>
+    <hr>
+    <h1>format tekx yg sering digunakan</h1>
+    <p>kamu bisa mamber penakanana dengan<b>bold</b>menambahkan<i>italie</i>,atau menandai sesuatu dengan<mark>hinggliht</mark></p>
+    <p>infor masi yg tidak lagi ber laku bisa di <del>dicoret</del>dan infor masi baru bisa di <b>ditambahkan</b> dengan <ins>garis bawa</ins></p>
+    <p>Untuk catatan di bawah.gunakan tekx<small>berukuran kecil</small>seperti ini</p>
+    <p>jadi <b>selamat menjelajahi</b> dunia hoding! dunia ini luas dan penuh keajaiban untuk di xsprol</p>
+    copyright &copy; 2023
+  </body>
+</html>
