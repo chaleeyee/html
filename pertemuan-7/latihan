@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Latihan</title>
+</head>
+<body >
+    <h1>Latihan Mengasah OTAK</h1>
+    <table >
+        <tr>
+            <th colspan="1" bgcolor="d3d3d3">nama nggota</th>
+            <th colspan="1" bgcolor="d3d3d3">Alamat</th>
+            <th colspan="1" bgcolor="d3d3d3">pekerjaan</th>
+            <th colspan="1" bgcolor="d3d3d3">Usia</th>
+            
+        </tr>
+        <tr>
+            <td>arkan</td>
+            <td>pamulang</td>
+            <td>atlet ngaji dan merojaah</td>
+        </tr>
+        
+
+    </table>
+
+    
+</body>
+</html>

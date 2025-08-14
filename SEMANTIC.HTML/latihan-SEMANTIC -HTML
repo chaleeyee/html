@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>latihan </title>
+</head>
+<body>
+    <h1>poratal informasi tehnologi</h1>
+    <nav>
+        <ul>
+            <li>
+                <a href="a">home pege</a>
+            </li>
+        </ul>
+    </nav>
+    <!--ini tampilan mein-->
+    <main>
+        <article>
+            <h2>teknologi 2012</h2>
+            <figure>
+                <img src="https://britishesports.org/wp-content/uploads/fly-images/27397/bef-esport_pro_gamer-700x395.webp" alt="ini gambar">
+            </figure>
+
+            <p>pada saatitu tehnologi belom keluar</p>
+        </article>
+    </main>
+    <!--ini tampilan secsion-->
+    <section>
+        <figure>
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcScIJSvWfkS8vLsKSHYn36m9XwdD8gwzFpTVw&s" alt="gambar html">
+        </figure>
+        <h3>html di pelajari</h3>
+        <p>siswa ni indosesia</p>
+    </section>
+    
+
+
+
+
+</body>
+</html>
