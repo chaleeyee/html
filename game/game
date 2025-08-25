@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <title>Game Tembakan</title>
+  <style>
+    body {
+      background: #222;
+      color: white;
+      text-align: center;
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      overflow: hidden;
+      user-select: none;
+    }
+    #gameArea {
+      position: relative;
+      width: 600px;
+      height: 400px;
+      background: #333;
+      margin: 40px auto;
+      border: 3px solid #555;
+      overflow: hidden;
+    }
+    #player {
+      position: absolute;
+      bottom: 10px;
+      left: 270px;
+      width: 60px;
+      height: 20px;
+      background: #00aaff;
+      border-radius: 5px;
+    }
+    #bullet {
+      position: absolute;
+      width: 6px;
+      height: 15px;
+      background: yellow;
+      display: none;
+      border-radius: 2px;
+    }
+    #target {
+      position: absolute;
+      top: 30px;
+      width: 50px;
+      height: 30px;
+      background: red;
+      border-radius: 8px;
+      left: 0;
+    }
+    #scoreBoard {
+      margin-top: 10px;
+      font-size: 24px;
+      font-weight: bold;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>Game Tembakan Sederhana</h1>
+  <div id="gameArea">
+    <div id="player"></div>
+    <div id="bullet"></div>
+    <div id="target"></div>
+  </div>
+  <div id="scoreBoard">Skor: 0</div>
+
+  <script>
+    const player = document.getElementById('player');
+    const bullet = document.getElementById('bullet');
+    const target = document.getElementById('target');
+    const gameArea = document.getElementById('gameArea');
+    const scoreBoard = document.getElementById('scoreBoard');
+
+    let score = 0;
+    let bulletActive = false;
+    let bulletPos = { x: 0, y: 0 };
+    let targetPos = 0;
+    let targetSpeed = 3;
+    let playerPos = 270; // initial left pos of player
+
+    // Gerakkan player kiri kanan pakai tombol panah
+    document.addEventListener('keydown', (e) => {
+      if (e.key === 'ArrowLeft') {
+        playerPos -= 20;
+        if (playerPos < 0) playerPos = 0;
+        player.style.left = playerPos + 'px';
+      } else if (e.key === 'ArrowRight') {
+        playerPos += 20;
+        if (playerPos > gameArea.clientWidth - player.clientWidth) 
+          playerPos = gameArea.clientWidth - player.clientWidth;
+        player.style.left = playerPos + 'px';
+      } else if (e.key === ' ') {
+        if (!bulletActive) shoot();
+      }
+    });
+
+    function shoot() {
+      bulletActive = true;
+      bulletPos.x = playerPos + player.clientWidth / 2 - bullet.clientWidth / 2;
+      bulletPos.y = gameArea.clientHeight - player.clientHeight - bullet.clientHeight - 10;
+      bullet.style.left = bulletPos.x + 'px';
+      bullet.style.top = bulletPos.y + 'px';
+      bullet.style.display = 'block';
+    }
+
+    function update() {
+      // Gerakkan target bolak-balik
+      targetPos += targetSpeed;
+      if (targetPos > gameArea.clientWidth - target.clientWidth || targetPos < 0) {
+        targetSpeed *= -1;
+      }
+      target.style.left = targetPos + 'px';
+
+      // Gerakkan peluru ke atas jika aktif
+      if (bulletActive) {
+        bulletPos.y -= 10;
+        if (bulletPos.y < 0) {
+          bulletActive = false;
+          bullet.style.display = 'none';
+        } else {
+          bullet.style.top = bulletPos.y + 'px';
+
+          // Cek tabrakan peluru dengan target
+          let bulletRect = bullet.getBoundingClientRect();
+          let targetRect = target.getBoundingClientRect();
+
+          if (!(bulletRect.right < targetRect.left ||
+                bulletRect.left > targetRect.right ||
+                bulletRect.bottom < targetRect.top ||
+                bulletRect.top > targetRect.bottom)) {
+            // kena target!
+            score++;
+            scoreBoard.textContent = "Skor: " + score;
+            bulletActive = false;
+            bullet.style.display = 'none';
+
+            // reset target posisi acak
+            targetPos = Math.random() * (gameArea.clientWidth - target.clientWidth);
+            target.style.left = targetPos + 'px';
+          }
+        }
+      }
+
+      requestAnimationFrame(update);
+    }
+
+    // mulai animasi update
+    update();
+
+  </script>
+
+</body>
+</html>

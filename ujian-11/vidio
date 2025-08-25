@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>berjudul Murottal</title>
+</head>
+<body>
+
+  <h1> UJIAN HARIAN !!!!!!!! 
+    Tema Murottal</h1>
+<hr>
+  <!-- VIDEO LOKAL -->
+  <h2>Video murottal video Lokal 1</h2>
+  <video width="480" controls>
+    <source src="./hacker.mp4" type="">
+    
+  </video>
+
+  <!-- VIDEO  YOUTUBE -->
+  <h2>Video murottal embed youtube 2</h2>
+  <iframe width="424" height="238" src="https://www.youtube.com/embed/8U6ISeD_hCU" title="Aksi Back Flip Sepeda Motor di Antara Dua Truk yang Sedang Bergerak" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+<hr>
+  <!-- AUDIO 1 -->
+  <h2>Audio murottal 1  audio lokal</h2>
+  <audio controls>
+    <source src="./Al-Fatihah.mp3" type="">
+    
+  </audio>
+
+  <!-- AUDIO 2 -->
+  <h2>audio Murottal 2  audio lokal</h2>
+  <audio controls>
+    <source src="./Al-Fatihah.mp3" type="">
+    
+  </audio>
+
+</body>
+</html>
