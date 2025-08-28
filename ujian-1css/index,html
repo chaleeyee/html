@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Sahabat Nabi</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <h1 class="sub-judul-besar">Biografi Sahabat Nabi</h1>
+    <h2 class="sub-judul-kecil">Abu Bakar Ash-Shiddiq</h2>
+
+    <p>
+      <i>Muhammad dimulai</i> dari kelahirannya pada tahun Gajah, tahun 570 M di
+      Mekah, sebagai anak yatim yang diasuh oleh kakek dan pamannya.Beliau
+      dikenal jujur dan terpercaya <i>(Al-Amin)</i>alu menjadi pedagang sukses
+      dan menikah dengan Khadijah. Pada usia 40 tahun, beliau menerima wahyu
+      pertama dari Allah melalui Malaikat Jibril di Gua Hira,
+      <i>dan memulai dakwah Islam,</i> yang awalnya menghadapi penolakan di
+      Mekah. Setelah hijrah ke Madinah, beliau membangun masyarakat Muslim,
+      melakukan peperangan dan diplomasi, dan pada akhirnya menaklukkan Mekah
+      dengan damai, sehingga
+    </p>
+
+    <p>
+      <i>Nabi Muhammad lahir pada tahun 570 M (Tahun Gajah) di Mekah</i>Beliau yatim karena ayahnya, Abdullah, meninggal sebelum lahir, dan ibunya, Aminah, meninggal saat beliau berusia enam tahun.  
+      Setelah orang tuanya wafat, Nabi diasuh oleh kakeknya, Abdul Muthalib, dan kemudian oleh pamannya, Abu Thalib. 
+      <i>Julukan Al-Amin</i> .
+    </p>
+
+    <footer>
+      <p>kholid bjry &copy; 2025</p>
+    </footer>
+  </body>
+</html>

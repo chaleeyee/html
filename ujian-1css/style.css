@@ -1,0 +1,22 @@
+
+.sub-judul-besar {
+    color: rgb(0, 255, 55);
+    font-size: 28px;
+}
+
+.sub-judul-kecil {
+    color: rgb(138, 28, 197);
+    font-size: 22px;
+}
+p {
+    font-size: 16px;
+    line-height: 1.6;
+}
+i {
+    font-style: italic;
+}
+footer {
+    margin-top: 50px;
+    text-align: center;
+    font-weight: bold;
+}
