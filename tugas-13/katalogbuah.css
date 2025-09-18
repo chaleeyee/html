@@ -1,0 +1,62 @@
+
+body {
+    font-family: Arial, sans-serif;
+
+    padding: 20px;
+    text-align: center;
+    
+}
+
+h1 {
+    color: #000000;
+}
+
+.katalog {
+    display: f;
+    gap: 30px;
+    margin-top: 30px;
+}
+
+.menu {
+
+    padding: 15px;
+    border-radius: 50px;
+    width: 200px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+
+.menu img {
+    width: 100%;
+    height: auto;
+    border: 5px solid #c5b446; /* Warna awal border */
+    border-radius: 50px; /* Sudut melengkung */
+    transition: border-color 0.3s ease;
+}
+
+.menu img:hover {
+    border-color: #ff5500; /* Warna saat hover */
+    
+}
+
+
+.nama-buah {
+    font-family: 'Comic Sans MS', cursive, sans-serif;
+    font-size: 1.4em;
+    margin: 10px 0;
+    color: #8c2c2c;
+}
+
+
+.harga {
+ 
+    padding: 10px;
+    color: #222;
+    font-weight: bold;
+    font-style:initial;
+    border-radius: 50px;
+
+}
+
+
+
